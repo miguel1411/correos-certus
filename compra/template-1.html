@@ -19,6 +19,24 @@
     supported-color-schemes:light dark;
 
     }
+  @media screen and (max-width: 735px){
+    #table-perfil{
+      display:contents;
+    }
+    #table-perfil-web{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 736px){
+    #table-perfil{
+      display:none;
+    }
+  }
+  @media (prefers-color-scheme: dark ) {
+	.container-img {
+    background-color: #fff !important;
+	}
+}
   </style>
   <title>Laboratorio Certus</title>
 </head>
@@ -45,7 +63,7 @@
       <!-- end Header -->
       <tr>
         <td>
-          <table id="table-perfil">
+          <table id="table-perfil" align="center">
             <tr>
               <td>
                 <img src="/images/perfil.jpg" alt="Creating Email Magic" width="100%" />
@@ -74,7 +92,7 @@
               </td>
             </tr>
           </table>
-          <table id="table-perfil-web" style=" margin-top: 10px;">
+          <table id="table-perfil-web" style=" margin-top: 10px;" align="center">
             <tr>
               <td bgcolor="#30B8E7">
                 <img src="/images/perfil.jpg" alt="Creating Email Magic" width="100%" />       
@@ -437,24 +455,5 @@
   </table>
 </body>
 
-<style>
-  @media screen and (max-width: 735px){
-    #table-perfil{
-      display:contents;
-    }
-    #table-perfil-web{
-      display: none;
-    }
-  }
-  @media screen and (min-width: 736px){
-    #table-perfil{
-      display:none;
-    }
-  }
-  @media (prefers-color-scheme: dark ) {
-	.container-img {
-    background-color: #fff !important;
-	}
-}
-</style>
+
 </html>
