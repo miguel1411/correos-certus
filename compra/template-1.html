@@ -7,8 +7,19 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <meta content="telephone=no" name="format-detection">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <style type="text/css">
+    :root {
+
+    Color-scheme: light dark;
+
+    supported-color-schemes:light dark;
+
+    }
+  </style>
   <title>Laboratorio Certus</title>
 </head>
 
@@ -97,7 +108,7 @@
       </td>
     </tr>
     <tr>
-      <td align="center">
+      <td align="center" class="container-img">
         <img src="/images/code.png" alt="Código de barras" width="300px">
       </td>
     </tr>
@@ -440,5 +451,10 @@
       display:none;
     }
   }
+  @media (prefers-color-scheme: dark ) {
+	.container-img {
+    background-color: #fff !important;
+	}
+}
 </style>
 </html>
