@@ -19,6 +19,24 @@
     supported-color-schemes:light dark;
 
     }
+  @media screen and (max-width: 735px){
+    #table-perfil{
+      display:contents;
+    }
+    #table-perfil-web{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 736px){
+    #table-perfil{
+      display:none;
+    }
+  }
+  @media (prefers-color-scheme: dark ) {
+	.container-img {
+    background-color: #fff !important;
+	}
+}
   </style>
   <title>Laboratorio Certus</title>
 </head>
@@ -45,7 +63,7 @@
       <!-- end Header -->
       <tr>
         <td>
-          <table id="table-perfil">
+          <table id="table-perfil" align="center">
             <tr>
               <td>
                 <img src="/images/perfil.jpg" alt="Creating Email Magic" width="100%" />
@@ -74,7 +92,7 @@
               </td>
             </tr>
           </table>
-          <table id="table-perfil-web" style=" margin-top: 10px;">
+          <table id="table-perfil-web" style=" margin-top: 10px;" align="center">
             <tr>
               <td bgcolor="#30B8E7">
                 <img src="/images/perfil.jpg" alt="Creating Email Magic" width="100%" />       
@@ -155,7 +173,7 @@
             <th bgcolor="#30B8E7"
               style="color: #fff; font-size: 13px; font-weight: 500; padding-right: 6px;  background: rgb(23,120,177); background: linear-gradient(230deg, rgba(23,120,177,1) 0%, rgba(48,184,231,1)100%);">
               Estudios</th>
-            <td align="left" style="font-size: 10px; color: #606364;">- Detección de COVID-19 por PCR
+            <td align="left" style="font-size: 18px; color: #606364;">- Detección de COVID-19 por PCR
               - Detección de anticuerpos IgG COVID-19</td>
           </tr>
           <tr>
@@ -169,7 +187,7 @@
             <th bgcolor="#30B8E7"
               style="color: #fff; font-size: 13px; font-weight: 500; padding-right: 6px; background: rgb(23,120,177); background: linear-gradient(230deg, rgba(23,120,177,1) 0%, rgba(48,184,231,1)100%);">
               Lugar</th>
-            <td align="left" style="font-size: 10px;">
+            <td align="left" style="font-size: 18px;">
               <p style="color: #1778B1; font-weight: bold;">Cualquiera de nuestras Sucursales en Tijuana</p>
               <p style="color: #606364;">- Lunes a Viernes 7am-6pm</p>
               <p style="color: #606364;">-Sábado 7am-2pm</p>
@@ -182,7 +200,7 @@
             <th bgcolor="#30B8E7"
               style="color: #fff; font-size: 13px; font-weight: 500; padding-right: 6px; background: rgb(23,120,177); background: linear-gradient(230deg, rgba(23,120,177,1) 0%, rgba(48,184,231,1)100%);">
               Dirección</th>
-            <td align="left" style="font-size: 10px;">
+            <td align="left" style="font-size: 18px;">
               <p style="color: #606364;">Estacionamiento Estadio Caliente.</p>
               <p style="color: #606364;">blvd. Agua Calliente 159,</p>
               <p style="color: #606364;">Col. Agua Caliente, 22024, Tijuana, B.C.</p>
@@ -192,7 +210,7 @@
             <th bgcolor="#30B8E7"
               style="color: #fff; font-size: 13px; font-weight: 500; padding-right: 6px; background: rgb(23,120,177); background: linear-gradient(230deg, rgba(23,120,177,1) 0%, rgba(48,184,231,1)100%);">
               Indicaciones</th>
-            <td align="left" style="font-size: 10px;">
+            <td align="left" style="font-size: 18px;">
               <p style="color: #606364;">- Uso de cubrebocas obligatorio, Se recomienda un ayuno de entre 8-12 hrs.</p>
               <p style="color: #606364;">- En caso de urgencia, solicitado por su médico, se puede realizar el estudio sin que el paciente se
                 encuentre en ayuno.</p>
@@ -203,7 +221,7 @@
             <th bgcolor="#30B8E7"
               style="color: #fff; font-size: 13px; font-weight: 500; padding-right: 6px; background: rgb(23,120,177); background: linear-gradient(230deg, rgba(23,120,177,1) 0%, rgba(48,184,231,1)100%);">
               Entrega de Resultados</th>
-            <td align="left" style="font-size: 10px;">
+            <td align="left" style="font-size: 18px;">
               <p style="color: #1778B1; font-weight: bold;">1 a 2 días hábiles</p>posteriores a la toma de muestra.
             </td>
           </tr>
@@ -436,25 +454,4 @@
     <!-- end Footer -->
   </table>
 </body>
-
-<style>
-  @media screen and (max-width: 735px){
-    #table-perfil{
-      display:contents;
-    }
-    #table-perfil-web{
-      display: none;
-    }
-  }
-  @media screen and (min-width: 736px){
-    #table-perfil{
-      display:none;
-    }
-  }
-  @media (prefers-color-scheme: dark ) {
-	.container-img {
-    background-color: #fff !important;
-	}
-}
-</style>
 </html>
